@@ -1,0 +1,16 @@
+{
+    "name": "Fbsharecount",
+    "version": "1",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "js": ["contentscript.js"],
+        "matches": ["*://*/*"],
+        "all_frames": true
+    }],
+    "browser_action": {
+    	"default_icon": "icon.png"
+	},
+	"web_accessible_resources": [
+	    "fblogo.png"
+	]
+}
